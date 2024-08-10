@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <span class="brand">AR_Tech</span>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu">
+            <span class="info" onclick="setCategory('punctuation')">Punctuation</span>
+            <span class="info" onclick="setCategory('numbers')">Numbers</span>
+            <span class="info" onclick="setCategory('words')">Words</span>
+            <span class="info" onclick="setCategory('quote')">Quote</span>
+            <span class="info" onclick="setTime(15)">15</span>
+            <span class="info" onclick="setTime(30)">30</span>
+            <span class="info" onclick="setTime(60)">60</span>
+            <span class="info" onclick="setTime(120)">120</span>
+            <span class="info" onclick="setCustomTime()">✎Custom</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="typing-test">
+            <div class="language">🌐 English</div>
+            <div id="text" class="text">Press 'Space' to start the test...</div>
+            <textarea id="typing-area" placeholder="Press 'Space' to start..." disabled></textarea>
+            <button onclick="startTest()">Start Test</button>
+        </div>
+        <div id="timer" class="timer">Time left: <span id="time-left"></span>s</div>
+        <div id="result" class="result"></div>
+    </div>
+    <div class="credits">
+         Designed by <a href="mailto:syedabdulrafeyali2005@gmail.com">Syed Abdul Rafey</a>
+     </div>
+    <audio id="start-sound" src="start.mp3" preload="auto"></audio>
+    <audio id="end-sound" src="end.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

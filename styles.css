@@ -1,0 +1,176 @@
+body {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e2e2e;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.brand {
+    color: #f1c40f;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    margin: 0 5px;
+    color: #f1c40f;
+    cursor: pointer;
+}
+
+.info:hover {
+    color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    margin-top: 70px;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.typing-test {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.language {
+    margin-bottom: 10px;
+    color: #a0a0a0;
+}
+
+.text {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#typing-area {
+    width: 100%;
+    height: 100px;
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    resize: none;
+}
+
+button {
+    background-color: #f1c40f;
+    color: #1e1e1e;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ffffff;
+}
+
+.timer, .result {
+    margin-top: 20px;
+    color: #f1c40f;
+}
+
+.correct {
+    text-decoration: none;
+    color: #dcdcdc;
+}
+
+.wrong {
+    text-decoration: underline;
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        background-color: #2e2e2e;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+}
+.credits {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+  text-align: right;
+  font-size: 13px;
+  color: #fff;
+  z-index: 999999;
+}
+
+@media (max-width: 992px) {
+  .credits {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.credits a {
+  color: #18d26e;
+  transition: 0.3s;
+}
+
+.credits a:hover {
+  color: #fff;
+}
